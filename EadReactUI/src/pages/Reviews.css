@@ -1,0 +1,109 @@
+/* Review Card */
+.review-card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.05);
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .review-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.75rem;
+    color: #2b2d42;
+    background: linear-gradient(90deg, #4361ee 0%, #3a0ca3 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  /* Form Elements */
+  .review-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .form-label {
+    font-weight: 600;
+    color: #3a0ca3;
+    font-size: 0.95rem;
+  }
+  
+  .form-input,
+  .form-textarea {
+    padding: 0.8rem 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .form-input:focus,
+  .form-textarea:focus {
+    outline: none;
+    border-color: #4361ee;
+    box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.15);
+  }
+  
+  .form-textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  
+  /* Star Rating */
+  .star-rating {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 1.8rem;
+  }
+  
+  .star {
+    color: #e2e8f0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .star.active {
+    color: #ffc107;
+    text-shadow: 0 0 8px rgba(255, 193, 7, 0.3);
+  }
+  
+  /* Submit Button */
+  .submit-btn {
+    background: linear-gradient(90deg, #4361ee 0%, #3a0ca3 100%);
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+  }
+  
+  .submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(67, 97, 238, 0.25);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .review-card {
+      padding: 1.5rem;
+    }
+    
+    .star-rating {
+      font-size: 1.5rem;
+    }
+  }
